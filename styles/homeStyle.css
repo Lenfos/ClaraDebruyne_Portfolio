@@ -52,9 +52,55 @@
     grid-template-columns: 330px 330px 330px;
 }
 
+#caroussel{
+    margin: 90px 0 60px 0;
+    display: flex;
+    gap: 7px;
+}
+
 #photos img{
     max-width: 330px;
     max-height: 330px;
     aspect-ratio: 1/1;
+    transition: 0.5s;
 }
 
+#photos img:hover{
+    transform: scale(1.05);
+}
+
+#photoV img {
+    object-fit: cover;
+    width: 500px;
+    height: 550px;
+    aspect-ratio: 10/11;
+}
+
+#photoH img{
+    object-fit: cover;
+    width: 500px;
+    height: 270px;
+    aspect-ratio: 50/27;
+}
+
+#photoH {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+
+.chevron{
+    width: 45px;
+    cursor: pointer;
+}
+
+.fadeOut{
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.fadeIn{
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
