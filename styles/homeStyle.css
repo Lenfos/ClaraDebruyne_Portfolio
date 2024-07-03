@@ -1,0 +1,60 @@
+
+#NameDiv{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-content: center;
+}
+
+#NameDiv > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0;
+}
+
+#NameDiv h1{
+    font-family: var(--titleFont), cursive;
+    font-size: 64px;
+    font-weight: 400;
+    margin: 0;
+}
+
+#NameDiv h2{
+    font-family: var(--textFont), sans-serif;
+    font-size: 24px;
+    font-weight: 200;
+    margin: 0 0 0 5px;
+}
+
+#NameDiv img{
+    width: 160px;
+    max-width: 160px;
+}
+
+#book{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#book > h2 {
+    font-family: var(--titleFont), cursive;
+    font-size: 64px;
+    font-weight: 200;
+    margin-bottom: 60px;
+}
+
+#photos{
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 330px 330px 330px;
+}
+
+#photos img{
+    max-width: 330px;
+    max-height: 330px;
+    aspect-ratio: 1/1;
+}
+

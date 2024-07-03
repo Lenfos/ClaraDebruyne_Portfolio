@@ -1,0 +1,57 @@
+
+main{
+    margin-bottom: 150px;
+    padding-bottom: 150px;
+}
+
+main > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap : 90px;
+}
+
+h1{
+    font-family: var(--titleFont), cursive;
+    font-size: 64px;
+    font-weight: 400;
+    padding: 50px 0;
+}
+
+#logo{
+    max-width: 330px;
+    width: 330px;
+}
+
+#linkDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.button {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border-radius: 20px;
+    padding: 20px 20px 20px 50px;
+    background-color: var(--buttonColor);
+    border: 2px solid var(--borderColor);
+    font-family: var(--textFont), sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--accentColor);
+    max-height: 65px;
+}
+
+p{
+    margin: 0;
+}
+
+.button img {
+    margin-right: 20px;
+}
+
+a{
+    text-decoration: none;
+}

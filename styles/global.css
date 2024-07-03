@@ -1,0 +1,90 @@
+@font-face {
+    font-family: "Raleway", sans-serif;
+    src: url("assets/font/Raleway/Raleway-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Dancing Script", cursive;
+    src: url("assets/font/DancingScript/DancingScript-VariableFont_wght.ttf") format("truetype");
+}
+
+:root{
+    --background-color: #F7ECFB;
+    --mainBackgroundColor : #FBF8FC;
+    --textColor : #27272A;
+    --accentColor : #5E379C;
+    --borderColor: #CAA3DD;
+    --buttonColor: #F5EEF9;
+    --titleFont: "dancing Script", cursive;
+    --textFont: "Raleway", sans-serif;
+}
+
+body{
+    background: var(--background-color);
+
+}
+
+main{
+    background-color: var(--mainBackgroundColor);
+    max-width: 1200px;
+    padding: 100px;
+    margin: auto;
+    box-shadow: 4px 4px 40px rgba(56, 56, 56, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+/*---------------------Nav style---------------------*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2em 150px 70px 50px;
+}
+
+header > img {
+    max-width: 100px;
+}
+
+nav {
+    font-family: var(--textFont), sans-serif;
+    font-size: 20px;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 0;
+}
+
+li{
+    list-style: none;
+}
+
+li > div {
+    background-color: var(--accentColor);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+li > a {
+    text-decoration: none;
+    color: var(--textColor);
+}
+
+li > .active {
+    text-decoration: underline var(--accentColor);
+    color: var(--accentColor);
+}
+
+li > a:hover {
+    text-decoration: underline;
+
+}
