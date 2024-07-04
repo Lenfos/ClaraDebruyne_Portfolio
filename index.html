@@ -2,13 +2,14 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clara Debruyne</title>
     <link rel="stylesheet" href="styles/homeStyle.css">
     <link rel="stylesheet" href="styles/global.css">
     <link rel="icon" href="assets/img/logo/favicon.svg">
     <script src="Client/homeMain.js" type="module"></script>
 </head>
-<body>
+<body id="body">
     <header>
         <img src="assets/img/logo/logoPurple.svg" alt="Logo de Clara Debruyne" loading="lazy">
         <nav>
@@ -38,11 +39,11 @@
         <div id="caroussel">
             <img id="prev" class="chevron" src="assets/img/icon/chevron_left.svg" alt="previous images">
             <div id="photoV">
-                <img id="car1" src="" alt="" loading="lazy"/>
+                <img class="clickable" id="car1" src="" alt="" loading="lazy"/>
             </div>
             <div id="photoH">
-                <img id="car2" src="" alt="" loading="lazy"/>
-                <img id="car3" src="" alt="" loading="lazy"/>
+                <img class="clickable" id="car2" src="" alt="" loading="lazy"/>
+                <img class="clickable" id="car3" src="" alt="" loading="lazy"/>
             </div>
             <img id="next" class="chevron" src="assets/img/icon/chevron_right.svg" alt="next images">
 
@@ -56,6 +57,12 @@
         </div>
 
     </main>
+    <div id="showImg">
+        <img id="close" src="assets/img/icon/close.svg" alt="Close Button">
+        <img id="showImgPrev" class="chevron" src="assets/img/icon/chevron_left_white.svg" alt="previous images">
+        <img id="bigImg" src="assets/img/photos/26.jpg" alt="">
+        <img id="showImgNext" class="chevron" src="assets/img/icon/chevron_right_white.svg" alt="previous images">
+    </div>
 </body>
 
 <script src="js/homeViews.js"></script>
