@@ -57,6 +57,14 @@ a{
     text-decoration: none;
 }
 
+.button:hover > p{
+    text-decoration: underline var(--accentColor);
+}
+
+.button:hover {
+
+}
+
 
 @media (max-width: 768px) {
 

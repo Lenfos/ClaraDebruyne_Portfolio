@@ -11,6 +11,7 @@ class HomeViews {
         this.car3 = document.getElementById("car3");
         this.divBigImg = document.getElementById("showImg");
         this.bigImg = document.getElementById("bigImg");
+        this.initLanguage();
         this.initPhoto();
         this.initList();
         this.displayCarroussel();
@@ -25,6 +26,17 @@ class HomeViews {
         });
         document.getElementById("showImgNext").addEventListener('click', this.nextImage.bind(this));
         document.getElementById("showImgPrev").addEventListener('click', this.prevImage.bind(this));
+    }
+    initLanguage() {
+        let lang = window.navigator.language;
+        if (!lang.startsWith("fr")) {
+            document.getElementById("html").lang = "en";
+            document.getElementById("professionalTitle").innerText = "Makeup Artist";
+        }
+        else {
+            document.getElementById("html").lang = "fr";
+            document.getElementById("professionalTitle").innerText = "Maquilleuse Professionnelle";
+        }
     }
     initPhoto() {
         for (let i = 1; i <= this.LENGTH; i++) {

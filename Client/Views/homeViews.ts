@@ -29,6 +29,7 @@ class HomeViews{
         this.divBigImg = document.getElementById("showImg") as HTMLDivElement;
         this.bigImg = document.getElementById("bigImg") as HTMLImageElement;
 
+        this.initLanguage();
         this.initPhoto();
         this.initList();
         this.displayCarroussel();
@@ -47,6 +48,18 @@ class HomeViews{
         document.getElementById("showImgPrev").addEventListener('click', this.prevImage.bind(this));
 
 
+    }
+
+    private initLanguage() {
+        let lang = window.navigator.language;
+        if (!lang.startsWith("fr")){
+            document.getElementById("html").lang = "en";
+            document.getElementById("professionalTitle").innerText = "Makeup Artist";
+        }
+        else {
+            document.getElementById("html").lang = "fr";
+            document.getElementById("professionalTitle").innerText = "Maquilleuse Professionnelle";
+        }
     }
 
     private initPhoto(){
