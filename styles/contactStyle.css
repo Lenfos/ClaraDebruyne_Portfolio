@@ -65,7 +65,7 @@ a{
     }
 
     body {
-        padding: 30px 30px;
+        padding: 10px;
     }
 
     main > div{
@@ -78,5 +78,32 @@ a{
 
     .button > p {
         font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+
+
+    h1{
+        font-size: 42px;
+    }
+
+    #logo{
+        max-width: 100px;
+        width: 100%;
+    }
+
+    .button{
+        padding: 15px 20px;
+        border-radius: 15px;
+    }
+
+    .button > p{
+       font-size: 14px;
+    }
+
+    .button > img {
+        width: 16px;
+        margin-right: 10px;
     }
 }
