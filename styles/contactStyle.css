@@ -15,6 +15,7 @@ h1{
     font-size: 64px;
     font-weight: 400;
     padding: 50px 0;
+    color: var(--textColor);
 }
 
 #logo{
@@ -33,7 +34,7 @@ h1{
     justify-content: left;
     align-items: center;
     border-radius: 20px;
-    padding: 20px 20px 20px 50px;
+    padding: 20px 20px 20px 40px;
     background-color: var(--buttonColor);
     border: 2px solid var(--borderColor);
     font-family: var(--textFont), sans-serif;
@@ -45,6 +46,7 @@ h1{
 
 p{
     margin: 0;
+    font-size: 24px;
 }
 
 .button img {
@@ -53,4 +55,28 @@ p{
 
 a{
     text-decoration: none;
+}
+
+
+@media (max-width: 768px) {
+
+    #logo{
+        width: 200px;
+    }
+
+    body {
+        padding: 30px 30px;
+    }
+
+    main > div{
+        flex-direction: column-reverse;
+    }
+
+    .button{
+        padding : 20px;
+    }
+
+    .button > p {
+        font-size: 20px;
+    }
 }
