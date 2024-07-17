@@ -231,6 +231,9 @@
 
 @media (max-width: 480px) {
 
+    main {
+        padding: 20px;
+    }
 
     /*-----------------------------Name Div----------------------------*/
     #NameDiv h1 {
@@ -243,13 +246,17 @@
 
     /*------------------------------Carroussel--------------------------*/
 
+    #photoV img, #photoH {
+        max-height: 250px;
+    }
+
     /*------------------------------Book-------------------------_------*/
 
     #book > h2 {
         font-size: 28px;
     }
 
-    main {
-        padding: 20px;
+    #photos{
+        grid-template-columns: 1fr 1fr;
     }
 }
