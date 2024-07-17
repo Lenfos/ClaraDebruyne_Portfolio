@@ -1,13 +1,15 @@
 @font-face {
     font-family: "Raleway", sans-serif;
     src: url("assets/font/Raleway/Raleway-VariableFont_wght.ttf") format("truetype"),
-         url("assets/font/Raleway/Raleway-VariableFont_wght.woff") format("woff");
+         url("assets/font/Raleway/Raleway-VariableFont_wght.woff") format("woff"),
+         url("assets/font/Raleway/Raleway-VariableFont_wght.woff2") format("woff2");
 }
 
 @font-face {
     font-family: "Dancing Script", cursive;
     src: url("assets/font/DancingScript/DancingScript-VariableFont_wght.ttf") format("truetype"),
-         url("assets/font/DancingScript/DancingScript-VariableFont_wght.woff") format("woff");
+         url("assets/font/DancingScript/DancingScript-VariableFont_wght.woff") format("woff"),
+         url("assets/font/DancingScript/DancingScript-VariableFont_wght.woff2") format("woff2");
 }
 
 :root{
