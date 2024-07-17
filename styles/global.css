@@ -90,3 +90,44 @@ li > a:hover {
     text-decoration: underline;
 
 }
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+
+    header {
+        margin: 1em;
+    }
+
+    header > img {
+        margin-bottom: 1em;
+        max-width: 60px;
+    }
+
+    ul {
+        gap: 10px;
+    }
+
+    li{
+        font-size: smaller;
+    }
+
+    main {
+        padding: 30px;
+        margin: auto auto 50px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        padding: 20px;
+    }
+
+    nav {
+        font-size: 16px;
+    }
+
+    ul {
+        gap: 5px;
+    }
+}

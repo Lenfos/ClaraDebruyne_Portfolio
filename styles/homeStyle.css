@@ -124,7 +124,7 @@
 }
 
 #bigImg{
-    height: 90%;
+    width: 46%;
 }
 
 #close {
@@ -140,4 +140,115 @@
 #close:hover {
     cursor: pointer;
     transform: scale(1.1);
+}
+
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    /*------------------Name div-------------------------*/
+
+
+    #NameDiv {
+        align-items: center;
+    }
+
+    #NameDiv img {
+        width: 120px;
+        max-width: 450px;
+    }
+
+    #NameDiv h1 {
+        font-size: 52px;
+    }
+
+    #NameDiv h2 {
+        font-size: 16px;
+    }
+
+
+    /*-----------------------------Caroussel---------------------------*/
+
+    #caroussel {
+        align-items: center;
+    }
+
+    .chevron {
+        display: none;
+    }
+
+    #photoH img{
+        max-width: 300px;
+        width: 100%;
+    }
+
+    #photoV img {
+        max-width: 400px;
+        width: 100%;
+    }
+
+
+    /*----------------------------Book---------------------------------*/
+
+    #book > h2 {
+        font-size: 52px;
+    }
+
+    #photos {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #photos img {
+        max-width: 200px;
+        width: 100%;
+    }
+
+
+    /*--------------------------Big Img------------------------------*/
+
+    #showImg{
+        padding: 0;
+        width: 100vw;
+    }
+
+    #close{
+        right: 15px;
+    }
+
+    #bigImg{
+        width: 70%;
+    }
+
+    #showImgNext, #showImgPrev{
+        display: initial;
+    }
+
+}
+
+
+
+
+@media (max-width: 480px) {
+
+
+    /*-----------------------------Name Div----------------------------*/
+    #NameDiv h1 {
+        font-size: 38px;
+    }
+
+    #NameDiv h2 {
+        font-size: 16px;
+    }
+
+    /*------------------------------Carroussel--------------------------*/
+
+    /*------------------------------Book-------------------------_------*/
+
+    #book > h2 {
+        font-size: 28px;
+    }
+
+    main {
+        padding: 20px;
+    }
 }
