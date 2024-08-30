@@ -1,16 +1,13 @@
-@font-face {
-    font-family: "Raleway", sans-serif;
-    src: url("assets/font/Raleway/Raleway-VariableFont_wght.ttf") format("truetype"),
-         url("assets/font/Raleway/Raleway-VariableFont_wght.woff") format("woff"),
-         url("assets/font/Raleway/Raleway-VariableFont_wght.woff2") format("woff2");
-}
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
 
 @font-face {
-    font-family: "Dancing Script", cursive;
-    src: url("assets/font/DancingScript/DancingScript-VariableFont_wght.ttf") format("truetype"),
-         url("assets/font/DancingScript/DancingScript-VariableFont_wght.woff") format("woff"),
-         url("assets/font/DancingScript/DancingScript-VariableFont_wght.woff2") format("woff2");
+    font-family: "Raleway", sans-serif;
+    src: url("../assets/font/Raleway/Raleway-VariableFont_wght.ttf") format("truetype"),
+         url("../assets/font/Raleway/Raleway-VariableFont_wght.woff") format("woff"),
+         url("../assets/font/Raleway/Raleway-VariableFont_wght.woff2") format("woff2");
 }
+
 
 :root{
     --background-color: #F7ECFB;
@@ -19,8 +16,8 @@
     --accentColor : #5E379C;
     --borderColor: #CAA3DD;
     --buttonColor: #F5EEF9;
-    --titleFont: "dancing Script", cursive;
-    --textFont: "Raleway", sans-serif;
+    --titleFont: 'Dancing Script', cursive;
+    --textFont: "Raleway";
 }
 
 body{
@@ -95,6 +92,11 @@ li > a:hover {
 
 }
 
+
+p, h1, h2{
+    color: var(--textColor);
+}
+
 /* Media Queries */
 
 @media (max-width: 768px) {
@@ -125,7 +127,17 @@ li > a:hover {
 
 @media (max-width: 1440px) {
     main{
-        padding: 20px;
+        padding: 80px 20px;
+        margin: 0 80px 40px;
+
+    }
+
+    nav{
+        font-size: 16px;
+    }
+
+    header > img{
+        max-width: 80px;
     }
 }
 

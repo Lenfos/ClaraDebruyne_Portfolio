@@ -145,6 +145,53 @@
 
 /* Media Queries */
 
+
+@media (max-width: 1440px) {
+
+    /*----------------------------Name Div-------------------------*/
+
+    #NameDiv h1 {
+        font-size: 48px;
+    }
+
+    #NameDiv h2{
+        font-size: 18px;
+    }
+
+    #NameDiv img{
+        max-width: 130px;
+    }
+
+    /*---------------------------Carroussel-------------------*/
+
+    #photoH img{
+        max-width: 450px;
+        max-height: 245px;
+        width: 100%;
+    }
+
+    #photoV img {
+        max-width: 350px;
+        max-height: 500px;
+        width: 100%;
+    }
+
+
+    /*---------------------------Book-------------------------*/
+
+    #book > h2 {
+        font-size: 48px;
+    }
+
+    #photos img {
+        max-width: 250px;
+    }
+
+    #photos {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
 @media (max-width: 768px) {
 
     /*------------------Name div-------------------------*/
@@ -225,8 +272,6 @@
     }
 
 }
-
-
 
 
 @media (max-width: 480px) {
