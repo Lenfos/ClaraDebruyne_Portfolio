@@ -115,11 +115,16 @@ a{
 
     h1{
         font-size: 42px;
+        padding: 20px 0;
     }
 
     #logo{
         max-width: 100px;
         width: 100%;
+    }
+
+    #linkDiv{
+        gap: 10px;
     }
 
     .button{
@@ -128,7 +133,7 @@ a{
     }
 
     .button > p{
-       font-size: 14px;
+       font-size: 12px;
     }
 
     .button > img {
