@@ -144,6 +144,7 @@ p, h1, h2{
 @media (max-width: 480px) {
     main {
         padding: 20px;
+        margin: 10px 10px;
     }
 
     nav {
